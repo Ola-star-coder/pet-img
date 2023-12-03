@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
+</head>
+<body>
+       <section id="home">
+        <form method="get">
+       <div class="home-content">
+        <h2>Search Images</h2>
+        <input type="search" placeholder="Search Pet Pics" required>
+        <button type="submit"><a href="dogs.html">Search</a></button>
+       </div>
+    </form>
+       </section>
+
+
+
+
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="dogs.html">Dogs Image</a></li>
+                    <li><a href="cat.jpeg">Cats Images</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div id="menuBtn">
+            <img src="/personal 7/menu.png" alt="nos" id="menu">
+        </div>
+        
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menuBtn.onclick = function () {
+                if (sideNav.style.right == "-250px") {
+                    sideNav.style.right = "0";
+                    menu.src = "/personal 7/close.png";
+                }
+                else {
+                    sideNav.style.right = "-250px";
+                    menu.src = "/personal 7/menu.png";
+                }
+            }
+
+        </script>
+</body>
+</html>
